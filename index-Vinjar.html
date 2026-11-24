@@ -7,25 +7,26 @@
     <title>Ratingside</title>
 </head>
 <body>
-    
     <div class="startside">
-        <h1>
-            Ratingside
-        </h1>
-        <p>
-            Dette er ein nettside der ein kan søke opp spill ved navn hashtags, f.eks. 
-            Fortnite kan komme opp ved å skrive "skytespill".
-        </p>
-
-        <input type="text" id="søk" placeholder="søker">
-        <button id="søkKnapp">Søk</button>
-        <p id="bekreftSøk"></p>
+        <div class="overskrift">
+            <h1>Ratingside</h1>
+        </div>
+        <div class="søk">
+            <input id="søk" placeholder="Søk etter spill...">
+            <button id="søkKnapp">Søk</button>
+        </div>
+        <div class="select">
+            <select id="sjangerVelger">
+                <!-- JavaScript fyller inn alle taggane her automatisk! -->
+            </select>
+        </div>
+        <div class="bekreftSøk">
+            <p id="bekreftSøk"></p>
+        </div>
     </div>
-    <ul>
-        <list>Overlevelse</list><br>
-        <list>Skytespill</list><br>
-        <list>Battle Royale</list><br>
-    </ul>
+
+    <!-- Her dukker spelkorta opp i eit fint rutenett -->
+    <div id="resultatBoks" class="resultat-grid"></div>
 
     <script src="main.js" type="module"></script>
 </body>
